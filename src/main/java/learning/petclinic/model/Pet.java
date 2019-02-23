@@ -1,0 +1,17 @@
+package learning.petclinic.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class Pet {
+
+    private PetType petType;
+    private Owner owner;
+    private Vet vet;
+}
