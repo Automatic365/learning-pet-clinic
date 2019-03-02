@@ -1,13 +1,23 @@
 package learning.petclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+public class Person extends BaseEntity  {
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
+    private String firstName;
+    private String lastName;
 
-public class Person  {
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
